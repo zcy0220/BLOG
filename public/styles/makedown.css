@@ -1,0 +1,52 @@
+.makedown {
+  margin: 15px;
+  padding: 15px 30px;
+  background-color: #fff;
+}
+.makedown a:hover { text-decoration: underline; }
+.makedown h1 { font-size: 2em; }
+.makedown h2 { font-size: 1.5em; }
+.makedown h1,
+.makedown h2,
+.makedown h3,
+.makedown h4 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+.makedown ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.makedown ul li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.makedown pre {
+margin: 1em 0px;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  margin-bottom: 0;
+  word-break: normal;
+  word-wrap: normal;
+  display: block;
+  white-space: pre;
+}
+.makedown code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, -apple-system; }
+.makedown p img { max-width: 100%; }
+  

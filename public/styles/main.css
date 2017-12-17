@@ -21,7 +21,7 @@ header {
   background-color: #fff;
 }
 header nav {
-  width: 80%;
+  width: 900px;
   height: 100%;  
   margin: 0 auto;
 }
@@ -29,6 +29,13 @@ header nav a,
 header nav p {
   float: right;
   line-height: 50px;
+  margin-right: 15px;
+}
+
+.blog {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 900px;
 }
 
 /* 遮罩 */

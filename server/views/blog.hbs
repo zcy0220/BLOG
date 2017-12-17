@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/makedown.css">
+<body>
+  {{!-- 导航头部 --}}
+  {{> header }}
+
+  {{!-- 主体 --}}
+  <div class="blog">
+    <div class="makedown">
+      {{{ content }}}
+    </div>
+  </div>
+
+  {{!-- 登录框 --}}
+  {{> account }}
+
+  {{!-- 脚本 --}}
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
