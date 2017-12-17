@@ -1,0 +1,85 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* 公用 */
+a,
+a:link,
+a:visited,
+a:active { color: #24292e; }
+a { text-decoration: none; }
+ul { list-style: none; }
+.hide { display: none; }
+
+/* 主体 */
+body {
+  background-color: #f2f2f2;
+  color: #24292e;
+}
+
+/* 头部 */
+header {
+  height: 50px;
+  background-color: #fff;
+}
+header nav {
+  width: 80%;
+  height: 100%;  
+  margin: 0 auto;
+}
+header nav a,
+header nav p {
+  float: right;
+  line-height: 50px;
+}
+
+/* 遮罩 */
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, .2);
+}
+
+/* 登录弹出框 */
+.account-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  display: none;
+  background-color: #fff;
+}
+.account-pop p {
+  height: 50px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #555;
+}
+.account-pop input {
+  width: 260px;
+  height: 40px;
+  margin: 20px 20px 0 20px;
+  padding: 5px;
+}
+.account-pop button {
+  width: 260px;
+  height: 40px;
+  margin: 20px 20px 0 20px;
+  color: #fff;
+  border: 0;
+  background: #555;
+  cursor: pointer;
+}
+.account-pop a {
+  float: right;
+  margin: 20px 20px 0 0;
+  font-size: 14px;
+}
+.account-pop a:hover { text-decoration: underline; }
+.account-pop .hide input { margin: 5px 20px 0 20px; }
+.account-pop .hide button { margin: 5px 20px 0 20px; }

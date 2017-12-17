@@ -1,0 +1,12 @@
+{{!-- 头部 --}}
+<header>
+  <nav>
+    {{#if session.userName }}
+      <p id="username-text">{{ session.userName }}</p>
+      <a href="#" class="hide" id="account-btn">登录</a>
+    {{else}}
+      <p class="hide" id="username-text"></p>
+      <a href="#" id="account-btn">登录</a>
+    {{/if}}
+  </nav>
+</header>

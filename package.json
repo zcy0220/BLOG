@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.3",
+    "koa2": "^2.0.0-alpha.7",
+    "mongoose": "^4.13.7"
+  }
+}
