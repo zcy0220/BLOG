@@ -89,7 +89,11 @@ window.onload = () => {
         const xhr = new XMLHttpRequest()
         xhr.onreadystatechange = () => {
             if (xhr.readyState == 4 && xhr.status == 200) {
-                success(JSON.parse(xhr.responseText))
+                try {
+                    success(JSON.parse(xhr.responseText))
+                } catch(e) {
+                    alert(xhr.responseText)
+                }
             }
         }
         xhr.open('post', '/api/signIn', true)
@@ -116,7 +120,11 @@ window.onload = () => {
         const xhr = new XMLHttpRequest()
         xhr.onreadystatechange = () => {
             if (xhr.readyState == 4 && xhr.status == 200) {
-                success(JSON.parse(xhr.responseText))
+                try {
+                    success(JSON.parse(xhr.responseText))
+                } catch(e) {
+                    alert(xhr.responseText)
+                }
             }
         }
         xhr.open('post', '/api/signUp', true)
