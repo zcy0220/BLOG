@@ -18,7 +18,7 @@ const user = {
         } else {
             results = await db.insert({name, password})
             if (results) {
-                const id = results[0].id
+                const id = results.id
                 ctx.body = info
                 setSession(ctx, {id, name})
             }

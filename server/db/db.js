@@ -1,6 +1,6 @@
 const { dbUrl } = require('../../config')
 const mongoose = require('mongoose')
-
+mongoose.Promise = global.Promise
 /**
  * 连接成功
  */
