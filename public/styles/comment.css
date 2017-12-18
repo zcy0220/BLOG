@@ -1,0 +1,39 @@
+.comment {
+    margin: 0 15px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .self-comment,
+  .comment ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  .self-comment input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    opacity: .5;
+  }
+  .self-comment button {
+    width: 80px;
+    height: 34px;
+    margin-top: 10px;
+    float: right;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    background: #555;
+    cursor: pointer;
+  }
+  .comment ul li {
+    border-top: 1px solid #eaecef
+  }
+  .comment ul li h3 {
+    color: #333;
+    margin-top: 10px;
+  }
+  .comment ul li p {
+    margin: 10px 0; 
+  }

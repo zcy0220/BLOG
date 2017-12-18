@@ -2,6 +2,7 @@
 <html>
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/makedown.css">
+  <link rel="stylesheet" href="../styles/comment.css">
 <body>
   {{!-- 导航头部 --}}
   {{> header }}
@@ -11,10 +12,15 @@
     <div class="makedown">
       {{{ content }}}
     </div>
+    {{!-- 评论 --}}
+    {{> comment }}
   </div>
 
   {{!-- 登录框 --}}
   {{> account }}
+
+  {{!-- 尾部 --}}
+  {{> footer }}
 
   {{!-- 脚本 --}}
   <script src="../scripts/main.js"></script>

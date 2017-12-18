@@ -8,6 +8,7 @@ a:active { color: #24292e; }
 a { text-decoration: none; }
 ul { list-style: none; }
 .hide { display: none; }
+::-webkit-input-placeholder { opacity: .8 }
 
 /* 主体 */
 body {
@@ -90,3 +91,10 @@ header nav p {
 .account-pop a:hover { text-decoration: underline; }
 .account-pop .hide input { margin: 5px 20px 0 20px; }
 .account-pop .hide button { margin: 5px 20px 0 20px; }
+
+/* 底部 */
+footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}

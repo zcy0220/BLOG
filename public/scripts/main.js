@@ -124,4 +124,41 @@ window.onload = () => {
         xhr.send(`userName=${userName}&password=${password}`)
     })
 
+    const commentBtn = document.getElementById('comment-btn')
+    const commentContent = document.getElementById('comment-content')
+    const conments = document.getElementById('conments')
+    commentBtn.onclick = e => {
+        e.preventDefault()
+        const blogId = window.location.href.split('/').pop()
+        const content = commentContent.value
+        if (content.trim() == '') {
+            alert('评论内容不能为空！')
+            return
+        }
+        const xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                const info = JSON.parse(xhr.responseText)
+                if (info.error == 0) {
+                    accountPop.style.display = 'block'
+                    mask.style.display = 'block'
+                    mask.style.width = window.screen.width + 'px'
+                    mask.style.height = window.screen.height + 'px'
+                } else {
+                    const li = document.createElement('li')
+                    conments.appendChild(li)
+                    const h3 = document.createElement('h3')
+                    h3.innerHTML = info.userName
+                    li.appendChild(h3)
+                    const p = document.createElement('p')
+                    p.innerHTML = info.content
+                    li.appendChild(p)
+                }
+            }
+        }
+        xhr.open('post', '/blogs/comment', true)
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+        xhr.send(`blogId=${blogId}&content=${content}`)
+    }
+
 }

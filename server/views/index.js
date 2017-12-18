@@ -8,6 +8,8 @@ const viewsEx = {
         partials: {
             header: 'components/header',
             account: 'components/account',
+            comment: 'components/comment',
+            footer: 'components/footer'
         }
     }
 }

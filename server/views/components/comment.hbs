@@ -1,0 +1,16 @@
+{{!-- 评论系统 --}}
+<div class="comment">
+  <div class="self-comment">
+    <p id="comment-name"></p>
+    <input type="text" id="comment-content" placeholder="写下你的评论 ……">
+    <button id="comment-btn">评论</button>
+  </div>
+  <ul id="conments">
+    {{#each comments}}
+      <li>
+        <h3>{{ this.userName }}</h3>
+        <p class="comment-name">{{ this.content }}</p>
+      </li>
+    {{/each}}
+  </ul>
+</div>
