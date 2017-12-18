@@ -1,4 +1,12 @@
 {
+  "name": "BLOG",
+  "version": "1.0.0",
+  "repository": "https://github.com/wugui0220/BLOG.git",
+  "author": "zhengchenyang <690574486@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/app.js"
+  },
   "dependencies": {
     "handlebars": "^4.0.11",
     "koa-bodyparser": "^4.2.0",
